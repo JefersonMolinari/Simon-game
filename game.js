@@ -1,3 +1,4 @@
+//jshint esversion:6
 let buttonColours = ["red", "blue", "green", "yellow"];
 let gamePattern = [];
 let userClickedPattern = [];
@@ -63,13 +64,13 @@ function checkAnswer(currentLevel){
         setTimeout(function(){
             $("body").removeClass("game-over");
         },200);
-        
+
         startOver();
     }
-};
+}
 
 function startOver(){
     isgameStarted = false;
-    level = 0
+    level = 0;
     gamePattern = [];
 }
